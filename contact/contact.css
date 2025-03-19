@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    font-family: Georgia, 'Bookman Old Style', serif;
+    color: #2C3E50;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 40px; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #2C3E50;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info-item {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #000; /* Changed to black */
+}
+
+.contact-info p strong {
+    color: #2C3E50;
+}
+
+.socials {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px; /* Increased gap between icons */
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icon img {
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.go-to-home {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #7D98A1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.go-to-home:hover {
+    background-color: #2C3E50;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .info-item {
+        flex: 1 1 100%;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
